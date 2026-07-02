@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GG COLOR - Wallet</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="wallet-page">
+
+<!-- Header -->
+
+<header class="wallet-header">
+
+<a href="home.html" class="back-btn">←</a>
+
+<h2>Wallet</h2>
+
+<div class="wallet-icon">💰</div>
+
+</header>
+
+<!-- Balance Card -->
+
+<section class="wallet-balance">
+
+<div class="balance-card">
+
+<p>Total Balance</p>
+
+<h1 id="walletAmount">₹0.00</h1>
+
+<div class="wallet-action">
+
+<button onclick="location.href='deposit.html'">
+
+Deposit
+
+</button>
+
+<button onclick="location.href='withdraw.html'">
+
+Withdraw
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Quick Menu -->
+
+<section class="wallet-menu">
+
+<div class="wallet-item">
+
+<div>💳</div>
+
+<p>Deposit History</p>
+
+</div>
+
+<div class="wallet-item">
+
+<div>🏧</div>
+
+<p>Withdraw History</p>
+
+</div>
+
+<div class="wallet-item">
+
+<div>🎁</div>
+
+<p>Bonus</p>
+
+</div>
+
+<div class="wallet-item">
+
+<div>📜</div>
+
+<p>Transactions</p>
+
+</div>
+
+</section>
+<!-- Recent Transactions -->
+
+<section class="recent-history">
+
+<h3>Recent Transactions</h3>
+
+<div class="history-item">
+
+<div>
+
+<h4>Deposit</h4>
+
+<p>30 Jun 2026 • 10:30 AM</p>
+
+</div>
+
+<b class="green">+₹500</b>
+
+</div>
+
+<div class="history-item">
+
+<div>
+
+<h4>Withdraw</h4>
+
+<p>29 Jun 2026 • 08:10 PM</p>
+
+</div>
+
+<b class="red">-₹200</b>
+
+</div>
+
+<div class="history-item">
+
+<div>
+
+<h4>Referral Bonus</h4>
+
+<p>29 Jun 2026 • 05:20 PM</p>
+
+</div>
+
+<b class="green">+₹120</b>
+
+</div>
+
+</section>
+
+<!-- Offer Card -->
+
+<section class="offer-card">
+
+<h2>🎁 First Deposit Bonus</h2>
+
+<p>Deposit ₹500 or more and get an extra ₹100 Bonus.</p>
+
+<button class="claim-btn">
+
+Deposit Now
+
+</button>
+
+</section>
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="home.html">
+🏠
+<span>Home</span>
+</a>
+
+<a href="wingo.html">
+🎮
+<span>Win Go</span>
+</a>
+
+<a href="promotion.html">
+🎁
+<span>Promotion</span>
+</a>
+
+<a href="wallet.html" class="active">
+💰
+<span>Wallet</span>
+</a>
+
+<a href="account.html">
+👤
+<span>Account</span>
+</a>
+
+</nav>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
