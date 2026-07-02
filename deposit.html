@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Deposit</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<div class="deposit-page">
+
+<header class="wallet-header">
+
+<a href="wallet.html"
+class="back-btn">←</a>
+
+<h2>Deposit</h2>
+
+<div class="wallet-icon">💳</div>
+
+</header>
+
+<div class="deposit-card">
+
+<h2>Deposit Money</h2>
+
+<p>
+Scan QR Code or Pay using UPI
+</p>
+
+<img src="assets/qr.png"
+class="qr-image">
+
+<div class="upi-box">
+
+<input
+type="text"
+value="ggcolor@upi"
+readonly>
+
+<button>
+
+Copy
+
+</button>
+
+</div>
+
+<input
+type="number"
+placeholder="Enter Amount"
+id="depositAmount">
+
+<input
+type="text"
+
+
+
+placeholder="Enter UTR Number"
+id="utrNumber">
+
+<input
+type="file"
+id="paymentImage">
+
+<button
+class="confirm-btn">
+
+Submit Deposit
+
+</button>
+
+</div>
+<!-- Deposit Rules -->
+
+<section class="deposit-info">
+
+<h3>Deposit Rules</h3>
+
+<ul>
+
+<li>✔ Minimum Deposit ₹200</li>
+
+<li>✔ Deposit will be credited after verification.</li>
+
+<li>✔ Enter correct UTR Number.</li>
+
+<li>✔ Upload payment screenshot.</li>
+
+<li>✔ Wrong details may cause rejection.</li>
+
+</ul>
+
+</section>
+
+<!-- Deposit History -->
+
+<section class="recent-history">
+
+<h3>Recent Deposit</h3>
+
+<div class="history-item">
+
+<div>
+
+<h4>₹00</h4>
+
+<p>UTR : 254781236547</p>
+
+</div>
+
+<b style="color:#ffc107;">
+
+Pending
+
+</b>
+
+</div>
+
+<div class="history-item">
+
+<div>
+
+<h4>₹0</h4>
+
+<p>UTR : 785412369874</p>
+
+</div>
+
+<b class="green">
+
+Approved
+
+</b>
+
+</div>
+
+</section>
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="home.html">
+🏠
+<span>Home</span>
+</a>
+
+<a href="wingo.html">
+🎮
+<span>Win Go</span>
+</a>
+
+<a href="promotion.html">
+🎁
+<span>Promotion</span>
+</a>
+
+<a href="wallet.html" class="active">
+💰
+<span>Wallet</span>
+</a>
+
+<a href="account.html">
+👤
+<span>Account</span>
+</a>
+
+</nav>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+
+</html>
