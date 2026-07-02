@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GG COLOR | Admin Panel</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="admin-page">
+
+<header class="wallet-header">
+
+<a href="home.html" class="back-btn">←</a>
+
+<h2>Admin Panel</h2>
+
+<div class="wallet-icon">⚙️</div>
+
+</header>
+
+<section class="admin-dashboard">
+
+<div class="admin-card">
+
+<h3>Total Users</h3>
+
+<h1 id="totalUsers">0</h1>
+
+</div>
+
+<div class="admin-card">
+
+<h3>Total Deposit</h3>
+
+<h1 id="totalDeposit">₹0</h1>
+
+</div>
+
+<div class="admin-card">
+
+<h3>Total Withdraw</h3>
+
+<h1 id="totalWithdraw">₹0</h1>
+
+</div>
+
+<div class="admin-card">
+
+<h3>Pending Requests</h3>
+
+<h1 id="pendingRequest">0</h1>
+
+</div>
+
+</section>
+
+<section class="admin-menu">
+
+<button class="confirm-btn">
+
+Manage Users
+
+</button>
+
+<button class="confirm-btn">
+
+Deposit Requests
+
+</button>
+
+<button class="confirm-btn">
+
+Withdraw Requests
+
+</button>
+
+<button class="confirm-btn">
+
+VIP Manager
+
+</button>
+
+<button class="confirm-btn">
+
+Notice Manager
+
+</button>
+
+<button class="confirm-btn">
+
+Logout
+
+</button>
+
+</section>
+<!-- Pending Deposits -->
+
+<section class="admin-table">
+
+<h2>Pending Deposits</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>User</th>
+<th>Amount</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Rahul</td>
+
+<td>₹500</td>
+
+<td>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Aman</td>
+
+<td>₹1000</td>
+
+<td>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<!-- Pending Withdraw -->
+
+<section class="admin-table">
+
+<h2>Pending Withdraw</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>User</th>
+<th>Amount</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Akash</td>
+
+<td>₹800</td>
+
+<td>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+
+</html>
