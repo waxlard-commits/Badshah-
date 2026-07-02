@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GG COLOR - Wingo</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="wingo-page">
+
+<!-- Header -->
+
+<header class="wingo-header">
+
+<a href="home.html" class="back-btn">←</a>
+
+<h2>Win Go</h2>
+
+<div class="wallet-mini">
+
+₹<span id="walletBalance">0.00</span>
+
+</div>
+
+</header>
+
+<!-- Period Card -->
+
+<div class="period-card">
+
+<div>
+
+<p>Current Period</p>
+
+<h3 id="periodNumber">202606300001</h3>
+
+</div>
+
+<div class="timer-box">
+
+<p>Time Left</p>
+
+<h2 id="countdown">00:59</h2>
+
+</div>
+
+</div>
+
+<!-- Game Tabs -->
+
+<div class="game-tabs">
+
+<button class="tab active">
+
+Win Go 1 Min
+
+</button>
+
+<button class="tab">
+
+3 Min
+
+</button>
+
+<button class="tab">
+
+5 Min
+
+</button>
+
+<button class="tab">
+
+10 Min
+
+</button>
+
+</div>
+
+<!-- Color Buttons -->
+
+<div class="color-section">
+
+<button class="green-btn">
+
+🟢 Green
+
+</button>
+
+<button class="violet-btn">
+
+🟣 Violet
+
+</button>
+
+<button class="red-btn">
+
+🔴 Red
+
+</button>
+
+</div>
+
+<!-- Number Grid -->
+
+<div class="number-grid">
+  <!-- Number Buttons -->
+
+<button class="num-btn green">1</button>
+<button class="num-btn red">2</button>
+<button class="num-btn green">3</button>
+<button class="num-btn red">4</button>
+<button class="num-btn violet">5</button>
+
+<button class="num-btn red">6</button>
+<button class="num-btn green">7</button>
+<button class="num-btn red">8</button>
+<button class="num-btn green">9</button>
+<button class="num-btn violet">0</button>
+
+</div>
+
+<!-- Bet Amount -->
+
+<div class="bet-card">
+
+<h3>Select Bet Amount</h3>
+
+<div class="bet-grid">
+
+<button class="bet-btn">₹10</button>
+<button class="bet-btn">₹50</button>
+<button class="bet-btn">₹100</button>
+<button class="bet-btn">₹500</button>
+<button class="bet-btn">₹1000</button>
+
+</div>
+
+<button class="confirm-btn">
+
+Confirm Bet
+
+</button>
+
+</div>
+
+<!-- Result History -->
+
+<div class="history-card">
+
+<h3>Result History</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Period</th>
+<th>Number</th>
+<th>Color</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>202606300001</td>
+<td>7</td>
+<td style="color:#00ff66;">Green</td>
+
+</tr>
+
+<tr>
+
+<td>202606300000</td>
+<td>2</td>
+<td style="color:#ff3b3b;">Red</td>
+
+</tr>
+
+<tr>
+
+<td>202606299999</td>
+<td>5</td>
+<td style="color:#b84cff;">Violet</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="home.html">
+🏠
+<span>Home</span>
+</a>
+
+<a href="wingo.html" class="active">
+🎮
+<span>Win Go</span>
+</a>
+
+<a href="promotion.html">
+🎁
+<span>Promotion</span>
+</a>
+
+<a href="wallet.html">
+💰
+<span>Wallet</span>
+</a>
+
+<a href="account.html">
+👤
+<span>Account</span>
+</a>
+
+</nav>
+
+</div>
+
+<script>
+
+let time = 59;
+
+const timer = document.getElementById("countdown");
+
+setInterval(()=>{
+
+if(time <= 0){
+
+time = 59;
+
+}
+
+let sec = time < 10 ? "0"+time : time;
+
+timer.innerText = "00:"+sec;
+
+time--;
+
+},1000);
+
+</script>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
